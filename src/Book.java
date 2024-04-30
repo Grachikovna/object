@@ -28,15 +28,6 @@ public class Book {
     }
 
     @Override
-    public String toString() {
-        return "Book{" +
-                "author=" + author +
-                ", name='" + name + '\'' +
-                ", publishYear=" + publishYear +
-                '}';
-    }
-
-    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -48,5 +39,15 @@ public class Book {
     public int hashCode() {
         return Objects.hash(author, name, publishYear);
     }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "author=" + author +
+                ", name='" + name + '\'' +
+                ", publishYear=" + publishYear +
+                '}';
+    }
 }
+
 
